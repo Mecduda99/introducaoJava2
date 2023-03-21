@@ -17,5 +17,24 @@ public class View {
 		
 		//Exibir a idade
 		System.out.println("Idade do carro: " + i);
+	
+		//Aumentar o valor do carro em 20%
+		gol.atualizarValor(0.2);
+		//exibir valor do carro
+		System.out.println("Valor atualizado do carro com + 20%: " + gol.valor);
+		
+		//exibindo seguro
+		double seguro = gol.seguro();
+		
+		System.out.println("Seguro do carro: " + seguro);
+		
+		//Exibir valor de parcela
+		double valorP = gol.calcularParcela(seguro, 10);
+		
+		System.out.println("Valor de parcelas eh:" + valorP);
+	
+	
+	
 	}
+
 }
